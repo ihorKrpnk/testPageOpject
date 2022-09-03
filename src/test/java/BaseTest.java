@@ -9,7 +9,7 @@ public class BaseTest {
     protected WebDriver webDriver;
 
     @BeforeMethod
-    public void setDriver(){
+    public void setDriver() {
 
         WebDriverManager.chromedriver().setup();
         webDriver = new ChromeDriver();
@@ -18,8 +18,7 @@ public class BaseTest {
     }
 
     @AfterMethod
-    public void closeDriver(){
-        webDriver.close();
+    public void quitDriver() {
         webDriver.quit();
     }
 }
