@@ -3,12 +3,13 @@ import org.openqa.selenium.WebDriver;
 
 public class PackagePage extends BasePage {
 
-    /* private final By elementAddToFavoritesButton = By.xpath("//a[@data-product-id='704']");*/
+    /*private final By elementAddToFavoritesButton = By.xpath("//a[@data-product-id='704']");*/
+
     private final By elementAddToFavoritesButton = By.xpath("//a[@data-product-id='1162']");
     private final By elementMessage = By.xpath("//div[@id='yith-wcwl-message']");
     private final By elementWishlistButton = By.xpath("//a[normalize-space()='My Wishlist']");
 
-    /*private final By elementTokyoTalkiesInWishlist = By.xpath("//a[normalize-space()='Tokyo Talkies']");*/
+   /* private final By elementTokyoTalkiesInWishlist = By.xpath("//a[normalize-space()='Tokyo Talkies']");*/
 
     private final By elementBlackCrossInWishlist = By.xpath("//a[normalize-space()='Black Cross Back Maxi Dress']");
     private final By elementPinkDropShoulderOversizedTShirt = By.xpath("//a[normalize-space()='pink drop shoulder oversized t shirt']");
@@ -23,7 +24,7 @@ public class PackagePage extends BasePage {
         super(driver);
     }
 
-    /*public void favoriteTokyoTalkies() {
+   /* public void favoriteTokyoTalkies() {
         click(elementAddToFavoritesButton);
     }*/
 
@@ -41,10 +42,11 @@ public class PackagePage extends BasePage {
         System.out.println("Wishlist is opened");
     }
 
-    /*public void isPresentTokyoTalkies() {
+   /* public void isPresentTokyoTalkies() {
         isPresent(elementTokyoTalkiesInWishlist);
         System.out.println(isPresent(elementTokyoTalkiesInWishlist));
     }*/
+
     public void isPresentBlackCross() {
         isPresent(elementBlackCrossInWishlist);
         System.out.println(isPresent(elementBlackCrossInWishlist));
