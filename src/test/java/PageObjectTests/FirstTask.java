@@ -1,8 +1,7 @@
 package PageObjectTests;
 
-import PageObjectPages.BaseTest;
-import PageObjectPages.HomePageObject;
-import PageObjectPages.WishlistPageObject;
+
+
 import org.testng.annotations.Test;
 
 public class FirstTask extends BaseTest {

@@ -1,8 +1,5 @@
 package PageObjectTests;
 
-import PageObjectPages.BaseTest;
-import PageObjectPages.CartPageObject;
-import PageObjectPages.PinkDropShoulderPageObject;
 import org.testng.annotations.Test;
 
 public class SecondTask extends BaseTest {
