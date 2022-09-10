@@ -29,9 +29,8 @@ public class BasePage {
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    public boolean isPresent(By locator){
+    public void isPresent(By locator) {
         getWebElement(locator).isDisplayed();
-        return true;
     }
 
     public void sendKeys(By locator, String text) {

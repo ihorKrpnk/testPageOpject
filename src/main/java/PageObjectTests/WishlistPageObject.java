@@ -13,6 +13,5 @@ public class WishlistPageObject extends BasePage {
 
     public void isPresentBlackCross() {
         isPresent(elementBlackCrossInWishlist);
-        System.out.println(isPresent(elementBlackCrossInWishlist));
     }
 }

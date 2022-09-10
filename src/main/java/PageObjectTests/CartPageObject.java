@@ -10,6 +10,5 @@ public class CartPageObject extends BasePage {
     }
     public void isPresentPinkDropShoulderInCart() {
         isPresent(elementPinkDropShoulderInCart);
-        System.out.println(isPresent(elementPinkDropShoulderInCart));
     }
 }
