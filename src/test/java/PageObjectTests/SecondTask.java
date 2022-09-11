@@ -8,7 +8,6 @@ public class SecondTask extends BaseTest {
     public void secondTaskTest() {
         webDriver.get("https://shop.demoqa.com/");
 
-
         PinkDropShoulderPageObject pinkDropShoulderPageObject = new PinkDropShoulderPageObject(webDriver);
 
         pinkDropShoulderPageObject.clickPinkDropShoulderOversizedTShirt();
