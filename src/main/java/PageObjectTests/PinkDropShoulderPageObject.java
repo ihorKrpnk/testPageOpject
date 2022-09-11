@@ -20,6 +20,10 @@ public class PinkDropShoulderPageObject extends BasePage {
         click(elementPinkDropShoulderOversizedTShirt);
     }
 
+    public void waitBeforeColorDropDown(){
+        waitElement(elementColorDropDown);
+    }
+
     public void clickColorDropDown() {
         click(elementColorDropDown);
     }

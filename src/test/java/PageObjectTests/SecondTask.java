@@ -12,6 +12,7 @@ public class SecondTask extends BaseTest {
         PinkDropShoulderPageObject pinkDropShoulderPageObject = new PinkDropShoulderPageObject(webDriver);
 
         pinkDropShoulderPageObject.clickPinkDropShoulderOversizedTShirt();
+        pinkDropShoulderPageObject.waitBeforeColorDropDown();
         pinkDropShoulderPageObject.clickColorDropDown();
         pinkDropShoulderPageObject.sendPinkText();
         pinkDropShoulderPageObject.waitSizeDrop();
