@@ -10,8 +10,6 @@ public class HomePageObject extends BasePage {
     private final By elementMessage = By.xpath("//div[@id='yith-wcwl-message']");
     private final By elementWishlistButton = By.xpath("//a[normalize-space()='My Wishlist']");
 
-
-
     public HomePageObject(WebDriver driver) {
         super(driver);
     }
@@ -21,7 +19,7 @@ public class HomePageObject extends BasePage {
     }
 
     public void waitMessage() {
-        waitAfterClick(elementMessage);
+        waitElement(elementMessage);
         System.out.println("Message is displayed");
     }
 
@@ -29,7 +27,4 @@ public class HomePageObject extends BasePage {
         click(elementWishlistButton);
         System.out.println("Wishlist is opened");
     }
-
-
-
 }

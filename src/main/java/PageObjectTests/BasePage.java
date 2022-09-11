@@ -24,15 +24,16 @@ public class BasePage {
         getWebElement(locator).click();
     }
 
-    public void waitAfterClick(By locator) {
+    public void waitElement(By locator) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    public void isPresent(By locator) {
+    public boolean isPresent(By locator) {
         if (getWebElement(locator).isDisplayed()) {
-            System.out.println("WebElement is displayed");
+            return true;
         }
+        return false;
     }
 
     public void sendKeys(By locator, String text) {

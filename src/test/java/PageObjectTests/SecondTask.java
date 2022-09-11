@@ -14,14 +14,19 @@ public class SecondTask extends BaseTest {
         pinkDropShoulderPageObject.clickPinkDropShoulderOversizedTShirt();
         pinkDropShoulderPageObject.clickColorDropDown();
         pinkDropShoulderPageObject.sendPinkText();
+        pinkDropShoulderPageObject.waitSizeDrop();
         pinkDropShoulderPageObject.clickSizeDropDown();
         pinkDropShoulderPageObject.sendSizeText();
+        pinkDropShoulderPageObject.waitQuantity();
         pinkDropShoulderPageObject.clickQuantity();
+        pinkDropShoulderPageObject.waitBeforeAddToCart();
         pinkDropShoulderPageObject.clickAddToCartButton();
+        pinkDropShoulderPageObject.waitBeforeClickCart();
         pinkDropShoulderPageObject.clickCartButton();
 
         CartPageObject cartPageObject = new CartPageObject(webDriver);
 
+        cartPageObject.waitBeforeCheck();
         cartPageObject.isPresentPinkDropShoulderInCart();
 
     }

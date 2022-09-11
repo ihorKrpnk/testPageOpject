@@ -8,7 +8,11 @@ public class CartPageObject extends BasePage {
     public CartPageObject(WebDriver driver) {
         super(driver);
     }
+
+    public void waitBeforeCheck() {
+        waitElement(elementPinkDropShoulderInCart);
+    }
     public void isPresentPinkDropShoulderInCart() {
-        isPresent(elementPinkDropShoulderInCart);
+        System.out.println(isPresent(elementPinkDropShoulderInCart));
     }
 }

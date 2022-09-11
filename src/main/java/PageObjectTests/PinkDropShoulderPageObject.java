@@ -28,6 +28,10 @@ public class PinkDropShoulderPageObject extends BasePage {
         sendKeys(elementColorDropDown, "pink\n");
     }
 
+    public void waitSizeDrop() {
+        waitElement(elementSizeDropDown);
+    }
+
     public void clickSizeDropDown() {
         click(elementSizeDropDown);
     }
@@ -36,14 +40,26 @@ public class PinkDropShoulderPageObject extends BasePage {
         sendKeys(elementSizeDropDown, "37\n");
     }
 
+    public void waitQuantity() {
+        waitElement(elementQuantity);
+    }
+
     public void clickQuantity() {
         for (int i = 0; i < 2; i++) {
             click(elementQuantity);
         }
     }
 
+    public void waitBeforeAddToCart() {
+        waitElement(elementAddToCartButton);
+    }
+
     public void clickAddToCartButton() {
         click(elementAddToCartButton);
+    }
+
+    public void waitBeforeClickCart() {
+        waitElement(elementCartButton);
     }
 
     public void clickCartButton() {
