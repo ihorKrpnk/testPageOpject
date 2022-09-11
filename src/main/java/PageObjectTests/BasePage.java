@@ -30,10 +30,7 @@ public class BasePage {
     }
 
     public boolean isPresent(By locator) {
-        if (getWebElement(locator).isDisplayed()) {
-            return true;
-        }
-        return false;
+       return getWebElement(locator).isDisplayed();
     }
 
     public void sendKeys(By locator, String text) {
