@@ -30,7 +30,9 @@ public class BasePage {
     }
 
     public void isPresent(By locator) {
-        getWebElement(locator).isDisplayed();
+        if (getWebElement(locator).isDisplayed()) {
+            System.out.println("WebElement is displayed");
+        }
     }
 
     public void sendKeys(By locator, String text) {
