@@ -29,7 +29,7 @@ public class PinkDropShoulderPageObject extends BasePage {
     }
 
     public void sendPinkText() {
-        sendKeys(elementColorDropDown, "pink\n");
+        sendKeys(elementColorDropDown, "pink");
     }
 
     public void waitSizeDrop() {
@@ -41,7 +41,7 @@ public class PinkDropShoulderPageObject extends BasePage {
     }
 
     public void sendSizeText() {
-        sendKeys(elementSizeDropDown, "37\n");
+        sendKeys(elementSizeDropDown, "37");
     }
 
     public void waitQuantity() {

@@ -11,7 +11,7 @@ public class WishlistPageObject extends BasePage {
         super(driver);
     }
 
-    public void isPresentBlackCross() {
-        System.out.println(isPresent(elementBlackCrossInWishlist));
+    public boolean isPresentBlackCross() {
+        return isPresent(elementBlackCrossInWishlist);
     }
 }

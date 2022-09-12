@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class CartPageObject extends BasePage {
     private final By elementPinkDropShoulderInCart = By.xpath("//a[normalize-space()='pink drop shoulder oversized t shirt - Pink']");
+
     public CartPageObject(WebDriver driver) {
         super(driver);
     }
@@ -12,7 +13,8 @@ public class CartPageObject extends BasePage {
     public void waitBeforeCheck() {
         waitElement(elementPinkDropShoulderInCart);
     }
-    public void isPresentPinkDropShoulderInCart() {
-        System.out.println(isPresent(elementPinkDropShoulderInCart));
+
+    public boolean isPresentPinkDropShoulderInCart() {
+        return isPresent(elementPinkDropShoulderInCart);
     }
 }
