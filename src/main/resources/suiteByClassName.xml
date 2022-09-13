@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testing-1.0.dtd">
+<suite name="Suite by class name">
+    <test name="org.testfort">
+        <classes>
+            <class name="PageObjectTests.FirstTask"/>
+            <class name="PageObjectTests.SecondTask"/>
+        </classes>
+    </test>
+</suite>

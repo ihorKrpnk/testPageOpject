@@ -1,5 +1,6 @@
 package PageObjectTests;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -14,17 +15,18 @@ public class HomePageObject extends BasePage {
         super(driver);
     }
 
+    @Step("Click on a product image")
     public void favoriteBlackCross() {
         click(elementAddToFavoritesButton);
     }
 
+    @Step("Confirmation pop-up should be displayed")
     public void waitMessage() {
         waitElement(elementMessage);
-        System.out.println("Message is displayed");
     }
 
+    @Step
     public void openWishlist() {
         click(elementWishlistButton);
-        System.out.println("Wishlist is opened");
     }
 }
